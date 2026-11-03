@@ -1,0 +1,11 @@
+# Eigene Konfiguration (enthält lokale Pfade) – nur die .example-Datei gehört ins Repo
+synphotomove.ini
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor / Werkzeuge
+.claude/
+.vscode/
+.idea/

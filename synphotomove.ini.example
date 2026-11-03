@@ -1,0 +1,46 @@
+# synPhotoMove – Beispielkonfiguration
+# Kopieren nach synphotomove.ini (neben synphotomove.py) und anpassen.
+
+[general]
+# Fotoablage (darin entstehen JJJJ/MM)
+target = /volume1/photo
+
+# Unterordnerstruktur im Ziel. Platzhalter: {year} {month} {day}
+folder_format = {year}/{month}
+
+exiftool = /usr/local/bin/exiftool
+
+# Dateien, die in den letzten X Minuten geschrieben wurden, beim nächsten Lauf verarbeiten
+min_age_minutes = 10
+
+# Videos mit einsortieren
+include_videos = true
+
+# Ordner innerhalb des jeweiligen Upload-Ordners
+nodate_folder = __noDateInformation
+duplicate_folder = duplicate
+log_folder = logs
+log_keep_months = 12
+
+# Weitere Ordnernamen, die nicht durchsucht werden (kommagetrennt).
+# nodate_folder, duplicate_folder, log_folder, @eaDir, #recycle und versteckte Ordner
+# werden immer ausgelassen.
+exclude_dirs = error
+
+# Leere Unterordner (z.B. DCIM/Camera) nach dem Lauf löschen
+remove_empty_dirs = false
+
+# Begleitdateien, die mit dem gleichnamigen Foto mitwandern
+sidecar_extensions = aae xmp thm
+
+# Optional: eigene Dateiendungs-Listen
+# image_extensions = jpg jpeg heic png ...
+# video_extensions = mp4 mov ...
+
+# lock_file = /tmp/synphotomove.lock
+# dry_run = false
+
+[sources]
+# Name = Upload-Ordner
+alice = /volume1/photo/upload_alice
+bob   = /volume1/photo/upload_bob
