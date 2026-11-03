@@ -6,6 +6,7 @@
 Fotos und Videos aus den Upload-Ordnern der ganzen Familie landen automatisch und sicher
 in `Jahr/Monat` – sortiert nach dem echten Aufnahmedatum.
 
+[![Tests](https://github.com/madcoda9000/synPhotoMove/actions/workflows/tests.yml/badge.svg)](https://github.com/madcoda9000/synPhotoMove/actions/workflows/tests.yml)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Synology DSM 7](https://img.shields.io/badge/Synology-DSM%207-B5B5B6?logo=synology&logoColor=white)](https://www.synology.com/)
 [![Keine Abhängigkeiten](https://img.shields.io/badge/Abh%C3%A4ngigkeiten-nur%20exiftool-success)](https://exiftool.org/)
